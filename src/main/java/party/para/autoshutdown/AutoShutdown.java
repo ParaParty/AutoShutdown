@@ -72,7 +72,7 @@ public class AutoShutdown {
         long diff = new Date().getTime() - theLastPlayerLogoutAt.getTime();
         if (shutdownImmediately || (diff > MILLIS_TO_SHUTDOWN)) {
             LOGGER.info("Auto shutdown.");
-            ServerLifecycleHooks.getCurrentServer().initiateShutdown(true);
+            ServerLifecycleHooks.getCurrentServer().initiateShutdown(false);
         }
     }
 
