@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "auto_shutdown"
+version = "${version}"
+displayName = "Auto Shutdown"
+authors = "Eric_Lian, Chino Moka"
+description = '''
+Auto shutdown server when no player online.
+'''
+#logoFile = ""
+
+[[dependencies.auto_shutdown]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.auto_shutdown]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.auto_shutdown]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "BOTH"

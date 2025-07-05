@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "auto_shutdown",
+  "version": "${version}",
+  "name": "Auto Shutdown",
+  "description": "Auto shutdown server when no player online.",
+  "authors": [
+    "Eric_Lian",
+    "Chino Moka"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ParaParty/AutoShutdown",
+    "sources": "https://github.com/ParaParty/AutoShutdown/tree/${minecraft_version}"
+  },
+  "license": "MIT",
+  "icon": "assets/auto_shutdown/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "party.para.autoshutdown.fabric.AutoShutdownFabric"
+    ],
+    "client": [
+      "party.para.autoshutdown.fabric.client.AutoShutdownFabricClient"
+    ]
+  },
+  "mixins": [
+    "auto_shutdown.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
