@@ -10,7 +10,7 @@
   ],
   "contact": {
     "homepage": "https://github.com/ParaParty/AutoShutdown",
-    "sources": "https://github.com/ParaParty/AutoShutdown/tree/${minecraft_version}"
+    "sources": "https://github.com/ParaParty/AutoShutdown/tree/1.20.1"
   },
   "license": "MIT",
   "icon": "assets/auto_shutdown/icon.png",
