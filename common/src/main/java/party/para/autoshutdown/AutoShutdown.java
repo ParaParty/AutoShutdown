@@ -57,7 +57,7 @@ public final class AutoShutdown {
     private static void onPlayerQuit(ServerPlayer player) {
         IMinecraftServerMixin serverMixin = (IMinecraftServerMixin) player.server;
 
-        if (player.server.getPlayerCount() == 0) {
+        if (player.server.getPlayerCount() <= 1) {
             Instant pendingShutdownTime = serverMixin.autoshutdown_isShutdownImmediately()
                     ? Instant.now()
                     : Instant.now().plus(Duration.ofMinutes(10));
